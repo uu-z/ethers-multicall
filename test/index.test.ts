@@ -1,3 +1,0 @@
-describe('noop', () => {
-  // no tests :(
-});

@@ -1,5 +1,5 @@
 {
-  "name": "ethers-multicall",
+  "name": "@iotexproject/ethers-multicall",
   "version": "0.1.6",
   "description": "Make multiple Ethereum network requests in a single HTTP query. ethcall for ethers v5.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "test": "mocha -r @ts-tools/node \"test/**/*.test.ts\"",
     "build": "tsc",
     "lint": "tslint -c tslint.json '{src,test}/**/*.ts' --fix",
-    "prepublishOnly": "yarn build && yarn test && yarn lint"
+    "prepublishOnly": "yarn build"
   },
   "keywords": [
     "ethers",
@@ -26,7 +26,8 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "ethers": "^5.0.0"
+    "erc-20-abi": "^1.0.0",
+    "ethers": "^5.1.2"
   },
   "peerDependencies": {
     "ethers": "^5.0.0"
